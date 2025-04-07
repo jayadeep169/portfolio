@@ -1,0 +1,91 @@
+
+#home{
+    width: 100%;
+    height: 100vh;
+     background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+#home-text{
+    margin-top: 15%;
+    margin-left: 10%;
+    font-size: 30px;
+}
+#home-text h1{
+    font-size: 60px;
+}
+#home-text span{
+    color: goldenrod;
+}
+#home-text{
+    animation: slideUp 1.5s ease-in-out;
+}
+.portfolio-heading {
+    text-align: center;
+    font-size: 48px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+    margin: 60px 0 30px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+    }
+    to {
+        text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+    }
+}
+
+@keyframes slideUp{
+    from{
+      transform:translateY(30px);
+      opacity: 0;
+    }
+    to{
+      transform:translateY(0);
+      opacity: 1;
+    }
+}
+@media screen and (max-width: 1024px) {
+    #home {
+        height: 80vh;
+        background-size: contain;
+    }
+    #home-text {
+        font-size: 24px;
+    }
+    #home-text h1 {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #home {
+        height: 70vh;
+        background-size: contain;
+    }
+    #home-text {
+        font-size: 20px;
+        width: 90%;
+    }
+    #home-text h1 {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #home {
+        height: 60vh;
+        background-size: contain;
+    }
+    #home-text {
+        font-size: 10px;
+        width: 90%;
+    }
+    #home-text h1 {
+        font-size: 32px;
+    }
+}
